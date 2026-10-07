@@ -1,0 +1,23 @@
+[theme]
+# Forcing an explicit light base theme is what actually stops Streamlit's
+# BaseWeb widgets (selectbox, multiselect, slider, popovers/menus) from
+# falling back to a dark palette when a user's OS/browser prefers dark mode.
+# Without this file, Streamlit auto-detects the system theme, which is the
+# real source of the "black dropdown" / "black slider" issue.
+base = "light"
+
+# Primary interactive color: used for the slider track/handle, selected
+# radio/checkbox state, and focus rings.
+primaryColor = "#21421e"
+
+# Main app background.
+backgroundColor = "#fdf5e6"
+
+# Background for the sidebar, widget containers, and dataframe header row.
+secondaryBackgroundColor = "#ffffff"
+
+# Default text color across all native Streamlit widgets (labels, dropdown
+# text, dataframe cell text, slider tick values).
+textColor = "#013220"
+
+font = "sans serif"
